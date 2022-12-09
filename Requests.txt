@@ -41,6 +41,32 @@ GET https://ServerOfMyCleaner.com/Robot12/storeProgram
 }
 
 
+При наступлении времени обновления, данная функция проверяет номер прошивки пылесоса, формирует REST запрос на сервер, в котором запрашивает версию последней прошивки,
+
+GET https://ServerOfMyCleaner.com/firmware/last_version 
+{ 
+    Accept:application/json 
+}
+
+сверяет с текущей и, в случае если требуется обновление, отправляет Get-запрос на скачивание файла прошивки. После скачивания, запускает процедуру установки программного обеспечения.
+
+GET https://ServerOfMyCleaner.com/firmware/last_version 
+{ 
+    application/octet-stream 
+}
+
+В случае наступления ошибки или сбоя в работе пылесос отправляет POST-сообщение с данными диагностики.
+
+POST https://ServerOfMyCleaner.com/client10001/mistakes 
+{ 
+    "MistakeNumber" : "234", 
+    "Robot" : "Robot12", 
+    "Date" : "..___", 
+    "Exception" : "String_number" 
+}
+
+
+
 
 
 
