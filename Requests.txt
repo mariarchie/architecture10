@@ -1,0 +1,47 @@
+Клиент отправляет Put-запрос на сервер, 
+в котором отправляет данные о пользователе
+
+PUT https://ServerOfMyCleaner.com/client10001/info
+{
+  "ClientNumber" : "10001", 
+  "firstName": "Amy",
+  "lastName": "Miller"
+}
+
+Клиент отправляет POST-сообщение на сервер с указанием требуемой программы.
+
+POST https://ServerOfMyCleaner.com/client10001/cleaningProgram
+{ 
+    "ClientNumber" : "10001" 
+    "Robot" : "Robot12", 
+    "date" : "..___", 
+    "cleaningProgram" : "23" 
+}
+
+Клиент отправляет Delete-запрос на сервер, чтобы удалить программу.
+
+DELETE	http://ServerOfMyCleaner.com/storeProgram/cleaningProgram23(PartitionKey='myPartitionKey', RowKey='myRowKey')
+
+При включении вылесос отправляет Put-запрос на сервер, 
+в котором отправяет данные о состоянии пылесоса
+
+PUT https://ServerOfMyCleaner.com/Robot12/info
+{
+  "RobotNumber" : "12", 
+  "LastPlace": "room1",
+  "Let": "5"
+}
+
+Пылесос формирует Get-запрос на сервер, 
+в котором запрашивает данные о требуемой программе.
+
+GET https://ServerOfMyCleaner.com/Robot12/storeProgram 
+{ 
+    Accept: application/json 
+}
+
+
+
+
+
+
