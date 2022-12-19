@@ -1,53 +1,56 @@
 <mxfile host="65bd71144e">
     <diagram id="fpukXKRhzrlxft2wSNXe" name="Страница 1">
-        <mxGraphModel dx="382" dy="338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="588" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="90" y="150" width="630" height="430" as="geometry"/>
+                <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="200" width="630" height="290" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="API Controller" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;" parent="1" vertex="1">
                     <mxGeometry x="90" y="40" width="630" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="FirmwareUpdates" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                <mxCell id="9" value="FirmwareUpdates" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="140" y="270" width="170" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="# robotNumber: int&#10;+ robotCurrentVersion(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9">
+                <mxCell id="10" value="# robotNumber: int&#10;+ robotCurrentVersion(): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9" vertex="1">
                     <mxGeometry y="26" width="170" height="44" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="9">
+                <mxCell id="23" value="" style="line;strokeWidth=2;html=1;" parent="9" vertex="1">
                     <mxGeometry y="70" width="170" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="+ checkLastVersion(): int&#10;+ compareVersions(): boolean&#10;+ downloadLastVersion(): void&#10;+ installLastVersion(): void&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="9">
+                <mxCell id="11" value="+ checkLastVersion(): int&#10;+ compareVersions(): boolean&#10;+ downloadLastVersion(): void&#10;+ installLastVersion(): void&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="9" vertex="1">
                     <mxGeometry y="80" width="170" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="DiagnosticDataTransmisson" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                <mxCell id="14" value="DiagnosticDataTransmisson" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
                     <mxGeometry x="500" y="250" width="170" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="# robotNumber: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+                <mxCell id="15" value="# robotNumber: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="14" vertex="1">
                     <mxGeometry y="26" width="170" height="24" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="- robotStatus: boolean&#10;&#10;- robotErrors: List&lt;integer&gt;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+                <mxCell id="16" value="- robotStatus: boolean&#10;&#10;- robotErrors: List&lt;integer&gt;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="14" vertex="1">
                     <mxGeometry y="50" width="170" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="14">
+                <mxCell id="22" value="" style="line;strokeWidth=2;html=1;" parent="14" vertex="1">
                     <mxGeometry y="100" width="170" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="+ pushNumber(): void&#10;+ pushStatus(): void&#10;+ pushErrors(): void&#10;+ getAdvance(): List&lt;string&gt;&#10;+ get Status(): boolean&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+                <mxCell id="17" value="+ pushNumber(): void&#10;+ pushStatus(): void&#10;+ pushErrors(): void&#10;+ getAdvance(): List&lt;string&gt;&#10;+ get Status(): boolean&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="14" vertex="1">
                     <mxGeometry y="110" width="170" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="9">
+                <mxCell id="27" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="9" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="225" y="100" as="sourcePoint"/>
                         <mxPoint x="500" y="300" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="14">
+                <mxCell id="28" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="14" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="585" y="100" as="sourcePoint"/>
                         <mxPoint x="235" y="280" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="ManufacturerBase&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="170" width="100" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
