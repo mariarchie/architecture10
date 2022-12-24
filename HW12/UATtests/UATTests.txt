@@ -1,0 +1,29 @@
+UAT-тестирование проведено на https://www.gurock.com/testrail/
+
+Для приемочного тестирования также можем использовать Watir на основе браузера.
+Это библиотека языка Ruby, которая позволяет создавать свои сценарии тестирования веб-приложений.
+Скрипт для тестирования может выглядеть следующим образом:
+
+# Пример небольшого скрипта для проверки последовательности действий 
+
+require 'watir'                                       # подключаем инструмент Watir
+
+testing _site = 'https://ServerOfMyCleaner.com/'      # определяем переменную
+
+ie = Watir::IE.new                                    # запускаем веб-обозреватель Internet Explorer
+
+ie.goto(testing _ServerOfMyCleaner)                   # переходим по ссылке
+
+ie.text_field(:name, "search").set("MyRobot")         # в текстовое поле с именем "search" помещаем слово "MyRobot"
+
+ie.button(:name, "Search").click                      # нажимает на кнопку с именем "Search"
+
+if ie.text.include?("Cleaning Program")               # описание условия теста
+
+    puts "Test Passed. Found the test string: 'Cleaning Program'."   # заключение по успешному прохождению
+
+ else
+
+   puts "Test Failed! Could not find: 'Cleaning Program'"            # тест не пройден
+
+ end
